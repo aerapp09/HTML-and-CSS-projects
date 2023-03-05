@@ -1,0 +1,1 @@
+This is another test for my HTML repository that I cloned using Git bash
