@@ -1,0 +1,8 @@
+p {
+	text-shadow: 2px 2px 8px #FF0000;
+	color: green;
+	background-color: yellow;
+	font-size: large;
+	text-align: center;
+	/* Comments go here */
+}
