@@ -15,7 +15,7 @@ body {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     line-height: 1.4857143;
     color: #333;
-    background-color: #fff;
+    background-color: #3a32322a;
 }
 
 footer,
@@ -24,7 +24,7 @@ nav {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Open Sans', sans-serif;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 h1 {
@@ -33,7 +33,7 @@ h1 {
     font-size: 30px;
     text-transform: uppercase;
     text-align: center;
-    color: #E91C1C;
+    color: #e9671cf5;
     text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
 }
 
@@ -42,7 +42,7 @@ h1::after {/*This is the underline */
     content: " ";
     height: 2px;
     width: 150px;
-    background: #E91C1C;
+    background: #b4541c;
     margin: 5px auto 40px;
     box-shadow: 5px 2px 3px rgba(0, 0, 0, 0.5);
 }
@@ -146,7 +146,7 @@ section {
 /*---------------------------------------------------
 HOME SECTION STYLES
 ----------------------------------------------------*/
-#home {background: url(../images/background3.jpg) no-repeat 50% 50%;
+#home {background: url(../images/thumb/background3.jpg) no-repeat 50% 50%;
     background-attachment: fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
