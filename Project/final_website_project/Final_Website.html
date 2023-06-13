@@ -16,7 +16,7 @@
             <a class="active" href="#Home">Home</a>
             <a href="#About">About</a>
             <a href="#Github">Github</a>
-            <a href="#Contact">Contact</a>
+            <a href="#Upcoming Projects">Upcoming Projects</a>
             <!--Onclick and ondblclick functions added to open and close hthe contact form-->
             <a onclick="openForm()" ondblclick="closeForm()" class="contact">Contact</a>
         </div>
@@ -39,8 +39,7 @@
             <h1 class="white-text">Austin Rapp's Portfolio</h1>
             <strong>
                 <p class="center">
-                    <q>We cannot solve our problems with the thinking we used to create them.
-                        <br>Logic will get you from A to B,
+                    <q>Logic will get you from A to B,
                         <br>imagination will take you everywhere.
                     </q>
                     <br>-Albert Einstein
@@ -58,13 +57,13 @@
                 <div id="Slideshow_Container">
                     <!--Slide 1 of 6-->
                     <div class="mySlides fade">
-                        <img class="Slideshow_Images" src="images/me.jpg" alt="Picture of yourself">
+                        <img class="Slideshow_Images" src="images/office3.png" alt="Picture of yourself">
                         <div class="text">I'm available to assist you on your project!</div>
                     </div>
                     <!--Slide 2 of 6-->
                     <div class="mySlides fade">
                         <img class="Slideshow_Images" src="images/HTML_CSS_and_Javascript.jpeg" alt="HTML, CSS, and JS logos">
-                        <div class="text">I'm am a data scienist,<br> trained in:<br>HTML, CSS, Javascript,</div>
+                        <div class="text">I'm am a data scientist,<br> trained in:<br>HTML, CSS, Javascript, SQL, and Python</div>
                     </div>
                     <!--Slide 3 of 6-->
                     <div class="mySlides fade">
@@ -115,7 +114,7 @@
             <div class="Column_1">
                 <h1>About</h1>
                 <p>
-                    I am a software developer who loves to code! As a husband and dog owner, I enjoy time with my family and traveling.
+                    I am a software developer who loves to code! I am  interested. As a husband and dog owner, I enjoy time with my family.
                     <br>
                     <br>I am a graduate of <a href="https://www.learncodinganywhere.com" target="_blank">The Tech Academy</a>'s Software Boot Camp, and trained and experienced in the following web and programming languages: HTML, CSS, JavaScript, SQL, C# and more.
                     <br>
@@ -141,6 +140,160 @@
             </div>
         </div>
 
+        <!--Upcoming Projects-->
+        <div class="background" id="Upcoming Projects">
+            <!--Full Page rather than columns-->
+            <br><br><br><br>
+            <div class="Stat_Page">
+                <h1> Upcoming Projects</h1>
+                <div class="stat_container">
+                    <h1>Define Goal</h1>
+                    
+                    <div class="Stat_text">
+                        <p>
+                                Goal(noun): the end toward which effort is directed : AIM.<br>
+                                Ex: "The goal is high-speed rail travel."<br><br>
+                              <br><br>
+                                I am learning online through classes in Pluralsight and using what I learned to find
+                                relationships in data. Sorry that this has no context! I'm working on finding a good project to present.
+                        </p>
+                    </div>
+
+                </div>
+
+                <div class="stat_container">
+                    <h1>My Goal</h1>
+                    
+                    <div class="Stat_text">
+                        <p>
+                            Build something that pushes people to communicate the things they want to say.I want to learn the modern tools of analysis to come up with ways to find
+                            the relationship people have to eachother and their environment.
+                        </p>
+                    </div>
+
+                </div>
+
+                <div class="stat_container">
+                    <h1">Graph I made in Jupyter:</h1>
+
+                    <div class="Stat_img">
+                        <img class = "Stat_img" src="images/my_plot.png" alt="Graphy daphy Missing">
+                    </div>
+                    
+                </div>
+                
+                <!--Second page for light box container-->
+                
+                <!-------------Begin Lightbox-------------->
+                <div class="stat_container2">
+                <h1 style="text-align:left">Iris Data Visualizations</h1>
+                    <div class="row" style="padding-bottom: 300px;">
+                        <h2 style="padding-bottom: 50px">Try Clicking on One of These Boxes:</h2>
+                        <div class="column_3">
+                            <img src = "images/my_plot2.png" style = "width:100%; margin-bottom: -4px;" onclick="openModal();currentSlide2(1)" class="hover-shadow cursor">
+                        </div>
+                        <div class="column_3">
+                            <img src = "images/my_plot3.png" style = 'width:100%; margin-bottom: -4px;' onclick="openModal();currentSlide2(2)" class="hover-shadow cursor">
+                        </div>
+                        <div class="column_3">
+                            <img src = "images/my_plot4.png" style = 'width:100%; margin-bottom: -4px;' onclick="openModal();currentSlide2(3)" class="hover-shadow cursor">
+                        </div>
+                        <div class="column_3">
+                            <img src = "images/my_plot5.png" style = 'width:100%; margin-bottom: -4px;' onclick="openModal();currentSlide2(4)" class="hover-shadow cursor">
+                        </div>
+                    </div>
+            
+                    <!--Modal/lightbox(I made mySlides_1 because it does not display otherwise)-->
+                    <div id="myModal" class="modal">
+                        <span class="close cursor" onclick="closeModal()">&times;</span>
+                        <div class="modal_content">
+            
+                            <div class="mySlides">
+                                <div class="numbertext">1 / 4</div>
+                                <img src="images/my_plot2.png" style="width:50%; margin-bottom: -4px;">
+                            </div>
+            
+                            <div class="mySlides">
+                                <div class="numbertext">2 / 4</div>
+                                <img src="images/my_plot3.png" style="width:100%; margin-bottom: -4px;">
+                            </div>
+            
+                            <div class="mySlides">
+                                <div class="numbertext">3 / 4</div>
+                                <img src="images/my_plot4.png" style="width:100%; margin-bottom: -4px;">
+                            </div>
+            
+                            <div class="mySlides">
+                                <div class="numbertext">4 / 4</div>
+                                <img src="images/my_plot5.png" style="width:100%; margin-bottom: -4px;">
+                            </div>
+            
+                            <!--Next/previous controls -->
+                            <a class="prev" onclick="plusSlides2(-1)">&#10094;</a>
+                            <a class="next" onclick="plusSlides2(1)">&#10095;</a>
+            
+                            <!--Caption text-->
+                            <div class="caption-container">
+                                <p id="caption"></p>
+                            </div>
+            
+                            <!--Thumbnail image controls-->
+                            <div class="column_3">
+                                <img class="demo cursor" src="images/my_plot2.png" style="width:100%; margin-bottom: -4px;" onclick="currentSlide2(1)" alt="Stat1">
+                            </div>
+            
+                            <div class="column_3">
+                                <img class="demo cursor" src="images/my_plot3.png" style="width:100%; margin-bottom: -4px;" onclick="currentSlide2(2)" alt="Stat2">
+                            </div>
+            
+                            <div class="column_3">
+                                <img class="demo cursor" src="images/my_plot4.png" style="width:100%; margin-bottom: -4px;" onclick="currentSlide2(3)" alt="Stat3">
+                            </div>
+            
+                            <div class="column_3">
+                                <img class="demo cursor" src="images/my_plot5.png" style="width:100%; margin-bottom: -4px;" onclick="currentSlide2(4)" alt="Stat4">
+                            </div>
+                        </div>
+                    </div>
+                
+                    <!--End Lightbox-->
+                    
+                    <div class="Stat_text" style="padding-bottom: 50px;">
+                        <h1 style= color:white> Violin Graph</h1>
+                        <p>Here is something I found interesting</p>
+                    </div>
+                    <div class="Stat_img">
+                        <img class = "Stat_img"  src="images/my_plot6.png" alt="Graphy daphy Missing">
+                    </div>
+                    
+                    <h2 style= color:white> Here is a Shiny project coded in R:</h2>
+                    <iframe height="400" width="100%" frameborder="no" src="https://2r6tf0-austin-rapp.shinyapps.io/iris-app/"> </iframe>
+
+                </div>
+                  
+                        
+            </div>
+                            <!--Stat project ideas-->
+                <div class="Row" id="Stat_Page">
+                    <!--Left column-->
+                    <div class="Column_1">
+                        <h1>Project Ideas </h1>
+                        <p>
+                            Pictures that Hollywood greenlights
+                            <br>
+                            Data from the Manhattan Project
+                            <br>
+                            <p class="center"><a href="https://github.com/aerapp09" target="_blank">Projects Github</a></p>
+                        </p>
+                    </div>
+                    <!--Right column-->
+                    <div class="Column_2">
+                        <a href="https://github.com/aerapp09" target="_blank"><img src="images/Python.png"></a>
+                    </div>
+                </div>
+            
+        </div>
+        
         <!--Contact form-->
         <div id="Contact">
             <button onclick="openForm()" class="Pop_Up_Button">CONTACT</button>

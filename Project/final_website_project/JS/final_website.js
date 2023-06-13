@@ -52,3 +52,50 @@ document.addEventListener("click", function(event) {
         closeForm()
     }
 }, false )
+
+
+
+/////////////////////////////THIS IS FOR MODAL FUNCTIONS /////////////////////////////////////////
+//Open the Modal
+function openModal() {
+    console.log("openModal Called");
+    document.getElementById("myModal").style.display = "block";
+}
+//close the modal
+function closeModal() {
+    console.log("closeModal called");
+    document.getElementById("myModal").style.display = "none";
+}
+
+var slideIndex = 1;
+showSlides2(slideIndex);
+
+//Next/prev controls
+function plusSlides2(n) {
+    showSlides2(slideIndex +=n);
+}
+
+//Thumbnail image controls
+function currentSlide2(n) {
+    console.log("currentSlide2 called");
+    showSlides2(slideIndex = n);
+}
+
+function showSlides2(n) {
+    console.log("showSlides2 called")
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("demo");
+    var captionText= document.getElementById("caption");
+    if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    for (i =0 ; i < slides.length; i++) {
+        slides[i].style.display = "none"
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " active";
+    captionText.innerHTML = dots[slideIndex-1].alt;
+}

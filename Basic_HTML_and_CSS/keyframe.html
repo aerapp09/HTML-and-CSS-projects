@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+       div {
+        width: 100px;
+        height: 100px;
+        background: red;
+        position: relative;
+        animation: mymove 5s infinite;
+       }
+        @keyframes zoominoutsinglefeatured {
+            0% {
+                transform: scale(1,1);
+                } 
+            50% {
+                transform: scale(1.2,1.2);
+            }
+            100% {
+                transform: scale(1,1);
+
+            }
+        }
+         iframe {
+            animation: zoominoutsinglefeatured 15s forwards;
+        }
+    
+        </style>
+    </head>
+    <body>
+        <h1>The keyframes Rule</h1>
+        <div></div>
+        <iframe img="thumbnail_3.jpg"></iframe>
+    </body>
+</html>

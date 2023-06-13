@@ -4,7 +4,7 @@
 html {
     scroll-behavior: smooth;
 }
-/* Body */
+/********** Body *******/
 body {
     margin: 0%; /* This ensures our site displays all the way to the edge of the browser screen */
     opacity: 1;
@@ -344,6 +344,7 @@ footer {
 }
 
 
+
 /* This inserts something after the content of selected elements (in this case the elements with class "Row") */
 .Row:after {
 	content: ""; /* By leaving this blank, we are allowing the footer (covered lower down) to be displayed - removing it makes the footer overwrite a column */
@@ -351,6 +352,194 @@ footer {
 	clear: both; /* This clears any other elements from floating on the left or the right of an element */
 }
 /***** END OF TABLE STYLING *****/
+
+
+
+/*******************************************STAT PAGE STYLING ********************************************/
+
+.Stat_Page {
+    float: center;
+    width: 100%;
+    padding: 10.6%;
+    background-color: #f0631196;
+}
+
+
+#.stat_container {
+    text-align: left;
+    font-family: 'Times New Roman', serif;
+    float: left;
+    width: 100%;
+    padding: 4.6%;
+    height: fit-content;
+
+}
+
+.stat_container {
+    padding-top: 100px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.stat_container2 {
+    padding-top: 50px;
+    text-align: left;
+    font-family: 'Times New Roman', serif;
+
+}
+
+h3 {
+    color: rgb(97, 20, 71);
+}
+
+
+#.Stat_img {
+    all: unset;
+    float: right;
+    margin: 5px;
+}
+
+.Stat_img {
+    max-width: 55%;
+    max-height: 35%;
+    float: center;
+    padding-bottom: 50px;
+}
+
+.Stat_text {
+    font-size: 20px;
+    padding-left: 20px;
+    padding-top: 5%;
+    color: white;
+    float:left;
+}
+
+/***STAT MODAL  STYLING **/
+
+/*this adds padding between the lightbox images without it they are next to one another*/
+.row > .column_3 {
+    padding: 0 8px;
+}
+
+.column_3 {
+    float: left;
+    width: 25%;
+}
+
+.modal{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: black;
+}
+
+.modal_content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    width: 90%;
+    max-width: 1200px;
+}
+
+.close {
+    color: white;
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus{
+    color: #999;
+    text-decoration: none;
+    cursor: pointer;
+
+}
+
+.mySlides_1 {
+    display:auto;
+}
+
+.cursor {
+    cursor: pointer;
+}
+/*Next and Prev buttons **/
+.prev,
+.next {
+    cursor: pointner;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+}
+/*position the next button to the right*/
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+/*on hover, add a black background color with a little bit see through */
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/*Number text (1/3) */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+
+/*caption text*/
+.caption-container {
+    text-align: center;
+    background-color: black;
+    padding: 2px 16px;
+    color: white;
+}
+.demo {
+    opacity: 0.6;
+}
+.active,
+.demo:hover {
+    opacity: 1;
+}
+img.hover-shadow {
+    transition: 0.3s;
+}
+.hover-shadow:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+}
+
+
+
+/***END STAT MODAL STYLING ****/
+
+/*************************************END STAT PAGE STYLING **********************************************/
+
+
 
 /***** CONTACT FORM STYLING *****/
 /* input[type=text] targets all text input sections of the contact form */
