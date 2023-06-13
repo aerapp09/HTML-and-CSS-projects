@@ -9,7 +9,7 @@ It includes:
 
 
 ## Why the project is useful
-This project is useful for anyone interested in how my websites were made. 
+This project is useful for anyone interested in seeing how different sites can be made and what they can be used for. 
 
 
 ## How users can get started with the project
